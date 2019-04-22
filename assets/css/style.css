@@ -1,0 +1,281 @@
+header {
+    background-color: #ffffff;
+    border-bottom: 3px solid #cccccc;
+    text-align: center;
+    display: flex;
+    width: 100%;
+}
+
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    overflow: auto;
+    width: 50%;
+}
+
+nav a {
+    color: #666666;
+    padding-top:5px;
+    padding-bottom: 5px;
+    
+}
+
+.navElement {
+    display: flex;
+    padding-right: 5%;
+    padding-left: 5%;
+    height: 25px;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    text-decoration: none;
+    line-height: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+.navElementBorder {
+   border-right: 1px solid #cccccc;
+}
+
+
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+    width: 79%;
+    flex-direction: row;
+    white-space: nowrap;
+    margin: 0 auto;
+}
+
+#myName, #myName a, #myName a a {
+    display: inline;
+    display: flex;
+    background-color: #4aaaa5;
+    padding: 2%;
+    color: #ffffff;
+    text-align: left;
+    align-content: flex-end;  
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #cccccc;
+    color: #4aaaa5;
+}
+
+
+.background {
+    background-image: url(../images/cross_scratches.png);
+    min-height: 85vh;
+}
+
+
+h1, h2 {
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+}
+
+p, ol {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+#easterEggQuestions {
+    margin-left: 50px;
+}
+
+.mainContent {
+    width: 75%;
+    border: 1px solid #CCCCCC;
+    background-color: #ffffff;
+    padding: 2%;
+    padding-bottom: 5%;
+    overflow: auto;
+    margin: 0 auto;
+}
+
+#headshot {
+    float: left;
+    width: 200px;
+    margin-right: 20px;
+}
+
+h2 {
+    border-bottom: 3px solid #CCCCCC;
+    color: #4aaaa5;
+    padding-bottom: 1em;
+}
+
+.mainContainer {
+    min-height: 90vh;
+    overflow: hidden;
+    display: block;
+    position: relative;
+}
+
+section img {
+    width: 300px;
+}
+
+section {
+    position: relative;
+}
+
+#fordFocusImg {
+    margin: 20px;  
+}
+
+#fordFocusContainer {
+    position: relative;
+}
+
+#fordFocusSource {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 12px;
+    color: #666666;
+    position: absolute;
+    bottom: -15px;
+    left: 0px;
+}
+
+.allPhotos {
+    float: left;
+    margin: 37px;
+    position: relative;
+}
+
+
+.bannerAbsolute {
+    position: absolute;
+    color: #ffffff;
+    padding: 20px 0;
+    z-index: 1;
+    background: #4aaaa5;
+    right: 0px;
+    bottom: 40px;
+    width: 300px;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+.bannerAbsolute:hover {
+    background-color: #cccccc;
+    color: #4aaaa5;
+}
+
+#userName, #userEmail {
+    margin-bottom: 20px;
+    width: 98%;
+    overflow: hidden; 
+}
+
+input[type], textarea[type] {
+    color: #000000;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 98%;
+    height: 300px;
+    resize: vertical horizontal;
+    float: left;
+}
+
+#wholeForm {
+    float: left;
+    width: 100%;
+    position: relative;
+    color: #000000;
+    margin-bottom: 20px;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+
+button {
+    float: left;
+    position: absolute;
+    padding: 7px 20px;
+    color: #000000;
+    border-radius: 5px;
+    left: 0px;
+    bottom: -40px;
+    overflow: hidden;
+}
+
+button:hover {
+    color: #ffffff;
+    background: #4aaaa5;
+}
+
+#easterEggDogDiv {
+    display: none;
+}
+
+#easterEggDogHover:hover #easterEggDogDiv{
+    color: #ffffff;
+    display: block;
+    width: 1000px;
+    position: absolute;
+    left: -50px;
+    top: -150px;
+    z-index: 10;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Why do I not need to "display: none" on this */
+/* #easterEggChurch {
+    display: none;
+} */
+   
+#easterEggChurchHover:hover #easterEggChurch p {
+    display: block;
+    float: left;
+    position: fixed;
+    width: 90%;
+    text-align: center;
+    font-size: 60px;
+    line-height: 60px;
+    background-color: #ffffff99;
+    left: 50px;
+    top: 25px;
+}
+
+#easterEggChurchHover {
+    position: absolute;
+    left: 7px;
+    bottom: 5;
+    background-color: #CCCCCC90;
+    width: 15px;
+    height: 15px;
+    z-index: 1;
+    transition: 10s ease-in background-color;
+}
+
+footer {
+    width: 100%;
+    background-color: #666666;
+    text-align: center;
+    color: #CCCCCC;
+    border-top: 4px solid #4aaaa5;
+    padding-top: 7px; 
+    padding-bottom: .5px;    
+}
+
+.socialLinks {
+    width: 25px;
+    padding: 0 3px;
+}
+
+footer p {
+    font-size: 12px;
+    line-height: 5px;
+}
