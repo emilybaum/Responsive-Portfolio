@@ -146,7 +146,7 @@ section {
 
 .allPhotos {
     float: left;
-    margin: 37px;
+    margin: 25px;
     position: relative;
 }
 
@@ -317,6 +317,19 @@ footer p {
     }
 }
 
+@media (max-width: 980px) {
+    .allPhotos img {
+        width: 220px;
+    }
+}
+
+@media (max-width: 980px) {
+    .bannerAbsolute {
+        width: 220px;
+    }
+}
+
+
 
 
 
@@ -350,6 +363,18 @@ footer p {
 @media (max-width: 768px) {
     #myName, h2 {
         font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .allPhotos img {
+        width: 190px;
+    }
+}
+
+@media (max-width: 768px) {
+    .bannerAbsolute {
+        width: 190px;
     }
 }
 
@@ -392,4 +417,15 @@ footer p {
     }
 }
 
+@media (max-width: 640px) {
+    .allPhotos img {
+        width: 300px;
+    }
+}
+
+@media (max-width: 640px) {
+    .bannerAbsolute {
+        width: 300px;
+    }
+}
 
